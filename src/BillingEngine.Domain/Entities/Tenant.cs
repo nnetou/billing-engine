@@ -7,21 +7,21 @@ namespace BillingEngine.Domain.Entities
         public bool IsActive { get; private set; }
         public DateTime CreatedAtUtc { get; private set; }
 
-    protected Tenant() { }
+        protected Tenant() { }
 
-    public Tenant(String name)
-    {
-        if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentException("Tenant name cannot be empty.", nameof(name));
+        public Tenant(String name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Tenant name cannot be empty.", nameof(name));
 
-        Id = Guid.NewGuid();
-        Name = name.Trim();
-        IsActive = true;
-        CreatedAtUtc = DateTime.UtcNow;
-    }
+            Id = Guid.NewGuid();
+            Name = name.Trim();
+            IsActive = true;
+            CreatedAtUtc = DateTime.UtcNow;
+        }
 
-    public void Deactivate() => IsActive = false;
-    public void Activate() => IsActive = true;
-    
+        public void Deactivate() => IsActive = false;
+        public void Activate() => IsActive = true;
+
     }
 }
