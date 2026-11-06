@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BillingEngine.Api/BillingEngine.Api.csproj" />
+    <Project Path="src/BillingEngine.Application/BillingEngine.Application.csproj" />
+    <Project Path="src/BillingEngine.Domain/BillingEngine.Domain.csproj" />
+    <Project Path="src/BillingEngine.Infrastructure/BillingEngine.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BillingEngine.IntegrationTests/BillingEngine.IntegrationTests.csproj" />
+    <Project Path="tests/BillingEngine.UnitTests/BillingEngine.UnitTests.csproj" />
+  </Folder>
+</Solution>
