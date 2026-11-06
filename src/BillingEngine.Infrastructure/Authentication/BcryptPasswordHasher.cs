@@ -1,4 +1,5 @@
 using BillingEngine.Application.Authentication;
+using BCrypt.Net;
 
 namespace BillingEngine.Infrastructure.Authentication;
 
