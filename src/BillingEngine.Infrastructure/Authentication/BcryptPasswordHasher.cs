@@ -10,9 +10,6 @@ public class BcryptPasswordHasher : IPasswordHasher
 
     public string Hash(string password)
     {
-        // Usamos o EnhancedHashPassword porque o BCrypt clássico ignora 
-        // silenciosamente qualquer caractere da password depois do 72º caractere.
-        // O "Enhanced" resolve isso fazendo um hash SHA384 antes do BCrypt.
         return BCrypt.Net.BCrypt.EnhancedHashPassword(password, WorkFactor);
     }
 
